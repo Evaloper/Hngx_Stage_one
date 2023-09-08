@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
   background-color: #f6f6f6;
 }
 
@@ -26,6 +29,7 @@ main {
 
 .left-div h1 {
   line-height: 30px;
+  font-weight: 800;
 }
 
 .left > img {
@@ -43,6 +47,7 @@ main {
 div h2 {
   margin-bottom: 0;
   color: #6a8ca9;
+  font-weight: 600;
 }
 
 div p {
@@ -75,7 +80,7 @@ a {
     display: block;
     width: 80%;
     padding: 50px 0;
-    margin: 10px;
+    /* margin: 10px; */
   }
 
   .left,
