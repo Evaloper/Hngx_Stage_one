@@ -17,17 +17,16 @@ function updateTime() {
     const currentTime = document.getElementById("currentTime");
 
     function updateUTCTime() {
-        // const actualUTCTime = { hour: 'time', minute: 'time', second: 'time' };
-        // const currentUTCTime = new Date().toLocaleTimeString(undefined, actualUTCTime);
+        const currentUTCTime = new Date().getTime();
 
-        const hours = setTime.getUTCHours();
-        const minutes = setTime.getUTCMinutes();
-        const seconds = setTime.getUTCSeconds();
-        const milliseconds = setTime.getTime();
+        // const hours = setTime.getUTCHours();
+        // const minutes = setTime.getUTCMinutes();
+        // const seconds = setTime.getUTCSeconds();
+        // const milliseconds = setTime.getTime();
 
-        const actualUTCTime = [`${hours}:${minutes}:${seconds}:${milliseconds}`];
-
-        currentTime.innerHTML = actualUTCTime;
+        // const actualUTCTime = [`${hours}:${minutes}:${seconds}:${milliseconds}`];
+        // currentTime.innerHTML = actualUTCTime;
+        currentTime.innerHTML = currentUTCTime;
     }
     updateUTCTime();
     setInterval(updateUTCTime, 1);
